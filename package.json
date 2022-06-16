@@ -1,0 +1,20 @@
+{
+  "name": "clothing-store",
+  "version": "1.0.0",
+  "description": "**Front-End Developer**",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "author": "Anna Kuznetsova",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^5.1.0"
+  }
+}
