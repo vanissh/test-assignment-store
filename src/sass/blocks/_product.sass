@@ -1,0 +1,126 @@
+.product
+    min-height: 602px
+    padding: 30px 0 70px 0
+    &__content
+        display: flex
+        justify-content: space-between
+    &__slider
+        display: flex
+        width: 50%
+        height: 100vh
+        background-color: #ccc
+    &__title
+        font-size: 24px
+        font-weight: bold
+        text-transform: uppercase
+    &__descr
+        display: flex
+        flex-direction: column
+        width: 45%
+        align-items: flex-start
+    &__links
+        width: 70%
+        margin-top: 23px
+        display: flex
+        justify-content: space-between
+    &__price
+        width: 70%
+        margin-top: 58px
+        display: flex
+        justify-content: space-between
+    &__discount
+        display: flex
+        justify-content: space-between
+    &__old
+        font-size: 18px
+        color: rgb(191, 190, 190)
+        text-decoration: line-through
+        margin-right: 10px
+    &__new
+        font-size: 18px
+        color: rgb(154, 155, 155)
+        font-weight: 600
+    &__promocode
+        font-size: 18px
+        color: $main-color
+        font-weight: 300
+        span
+            font-weight: 700
+    &__banner
+        margin-top: 20px
+        width: 70%
+        min-height: 65px
+        background-color: $second-color
+        padding: 15px 24px
+    &__instok
+        font-size: 13px
+        color: $main-color
+        i
+            font-size: 12px
+    &__delivery
+        margin-top: 12px
+        font-size: 13px
+        color: $main-color
+        i
+            font-size: 12px
+    &__btns
+        width: 100%
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+    &__text
+        width: 100%
+        margin-top: 43px
+        font-size: 13px
+        color: $main-color
+        line-height: 1.385
+    &__socials
+        margin-top: 39px
+        display: flex
+        justify-content: space-between
+        width: 70%
+    &__share
+        display: flex
+        align-items: center
+        font-size: 13px
+        color: $main-color
+        text-transform: uppercase
+    &__social-icons
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__social-icon
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 10px
+        border-style: solid
+        border-width: 2px
+        border-color: rgb(217, 217, 217)
+        border-radius: 50%
+        width: 31px
+        height: 31px
+        i
+            color: rgb(217, 217, 217)
+        &:nth-child(4)
+            margin-right: 20px
+    &__reposts
+        display: flex
+        position: relative
+        justify-content: center
+        align-items: center
+        font-size: 13px
+        color: $main-color
+        text-transform: uppercase
+        background-color: rgb(239, 239, 239)
+        width: 45px
+        height: 30px
+        &::before
+            content: ''
+            position: absolute
+            border: 8px solid transparent
+            border-right: 8px solid rgb(239, 239, 239)
+            display: block
+            width: 0
+            height: 0
+            left: -35%
