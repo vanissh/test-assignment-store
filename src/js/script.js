@@ -8,22 +8,18 @@ const sliderWrap = document.querySelector('.slider__wrap'),
         4: 'img/another_shirt.jpeg',
     }
 
-const slides = []
+let length = 0
 
-const pushSlides = () => {
-    for(let key in imgs){
-        const slide = document.createElement('div')
-        slide.className = 'slider__item'
-        slide.innerHTML = `<img class="slider__img" src="${imgs[key]}" alt="shirt">`
-        slides.push(slide)
-    }
+for(let key in imgs){
+    const slide = document.createElement('div')
+    slide.className = 'slider__item'
+    slide.innerHTML = `<img class="slider__img" src="${imgs[key]}" alt="shirt">`
+    sliderWrap.append(slide)
+
+    length++
 }
 
-pushSlides()
-slides.forEach(item => sliderWrap.append(item))
-
 let current = 1,
-    length = slides.length,
     reserv = length - 3,
     size = 160
 
@@ -53,7 +49,7 @@ document.addEventListener('click', e => {
         let slide = target.closest('.slider__item'),
             slideID
 
-        slides.forEach((item, id) => {
+        sliderWrap.querySelectorAll('div').forEach((item, id) => {
             if(item === slide){
                 slideID = id
             }
