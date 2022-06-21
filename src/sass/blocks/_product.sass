@@ -4,13 +4,9 @@
     &__content
         display: flex
         justify-content: space-between
-    &__slider
-        display: flex
-        width: 50%
-        height: 100vh
-        background-color: #ccc
     &__title
-        font-size: 24px
+        margin-top: 40px
+        font-size: 18px
         font-weight: bold
         text-transform: uppercase
     &__descr
@@ -18,9 +14,10 @@
         flex-direction: column
         width: 45%
         align-items: flex-start
+        justify-content: space-between
     &__links
         width: 70%
-        margin-top: 23px
+        margin-top: 22px
         display: flex
         justify-content: space-between
     &__price
@@ -41,7 +38,7 @@
         color: rgb(154, 155, 155)
         font-weight: 600
     &__promocode
-        font-size: 18px
+        font-size: 16px
         color: $main-color
         font-weight: 300
         span
@@ -51,7 +48,7 @@
         width: 70%
         min-height: 65px
         background-color: $second-color
-        padding: 15px 24px
+        padding: 11px 24px
     &__instok
         font-size: 13px
         color: $main-color
@@ -70,12 +67,12 @@
         justify-content: space-between
     &__text
         width: 100%
-        margin-top: 43px
+        margin-top: 42px
         font-size: 13px
         color: $main-color
         line-height: 1.385
     &__socials
-        margin-top: 39px
+        margin-top: 34px
         display: flex
         justify-content: space-between
         width: 70%
@@ -100,10 +97,13 @@
         border-radius: 50%
         width: 31px
         height: 31px
+        text-decoration: none
         i
             color: rgb(217, 217, 217)
         &:nth-child(4)
             margin-right: 20px
+        &:hover
+            cursor: pointer
     &__reposts
         display: flex
         position: relative
