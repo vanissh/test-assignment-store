@@ -7,5 +7,4 @@
     + Firefox 33+
     + Chrome 39+
     + Safari 8+
-    .Слой_48 {
 
